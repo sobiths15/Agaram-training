@@ -60,7 +60,7 @@ print(trends_mart)
 #for s in range(1,10):
   #  print("*",+s)
 a=34
-if a not>35:
+if a>35:
     pass
     if a>25:
         print("true")

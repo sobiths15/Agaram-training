@@ -31,10 +31,10 @@
 #     pass
 # else:
 #     print(False)    
-sentence = input("Enter sentence: ")
-longest = max(sentence.split())
-long_word=len(longest)
-print("Longest word is: ",long_word)
+# sentence = input("Enter sentence: ")
+# longest = max(sentence.split())
+# long_word=len(longest)
+# print("Longest word is: ",long_word)
 
 # import itertools
 # def findallpair(l,s):
@@ -48,3 +48,32 @@ print("Longest word is: ",long_word)
 # summ=int(input("enter:"))
 # #function call
 # findallpair(list_1,summ)
+# n=5
+# for i in range(1,26):
+#     print(i,end=' ')
+#     if i%n==0:
+#         print()
+    #for j in range(n):
+        #print(n,end="")
+    
+    # if i%n==0:
+    #     print("\n")
+    # print(i,end="")    
+# n=5
+# for i in range(n*n,0,-1):
+#    #print(i,end=' ')
+#     if i%n==0:
+#         print(" ") 
+#     print(i,end=" ")     
+
+# n=5
+# for i in range(1,n+1):
+#     for j in range(i):
+#         print('*',end='  ')
+#     print()
+
+n=5
+for i in range(5,0,-1):
+    for j in range(i):
+        print('*',end='  ')
+    print()

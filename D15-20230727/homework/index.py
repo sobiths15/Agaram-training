@@ -22,7 +22,7 @@ def group_by_list(list):
         if i["category"] not in a:
             a[i["category"]]=[i["name"]]
         else:
-            a[i["category"]>]    
+            a[i["category"]>c]    
 
 
 
