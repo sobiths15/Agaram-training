@@ -48,7 +48,7 @@ user_details=[
             },
             {
                 "name":"ajin",
-                "mark":[81,90,70,83,93]
+                "mark":[81,90,70,83,93]  
             }
             ]
 for students in user_details:

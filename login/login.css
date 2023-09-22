@@ -1,0 +1,14 @@
+#first{
+    display: none;
+}
+#register{
+    display: none;
+}
+
+th{
+    width: 20%;
+    padding: 5%;
+}
+tbody{
+    text-align: center; 
+}

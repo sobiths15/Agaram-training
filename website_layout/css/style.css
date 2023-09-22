@@ -1,0 +1,48 @@
+.outer{
+        
+    }
+    section{
+        background-color:rgb(175, 185, 209);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    *{margin: 0%;
+    padding: 0%;}
+    
+    .logo{
+        display: inline-block;
+        margin-left: 50px;
+        
+    }
+    .name{
+        display: inline-block;
+        margin-left: 70%;
+        vertical-align: top;
+        margin-left: 780px;
+    }
+    .img{
+        display: inline-block;
+    }
+    .content{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+    .sec{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+    .head{
+        border: 1px dark black;
+        padding: 30px 0px;
+        background-color: aqua;
+        text-align: center;
+        color: blueviolet;
+        width: 70%;
+        margin-left: 15%;
+        
+    }
+
