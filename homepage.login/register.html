@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="logreg.css">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
 </head>
 <body>
     <form>
@@ -13,9 +15,10 @@
         <input type="email" id="email_2"><br><br>
         <label>Password:</label><br>
         <input type="password" id="pass_2"><br><br>
-        <input type="button" value="register" onclick="data()">
+        <input type="button" value="register" onclick="register()">
         
     </form>
-</body>
     <script src="logreg.js"></script>
+</body>
+  
 </html>

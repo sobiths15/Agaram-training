@@ -33,29 +33,24 @@
           if (data_3[i].email==login_email && data_3[i].password==login_pass){
              localStorage.setItem("loggedin",true)
              alert("sucess")
+             
              document.getElementById("form").style.display="none"
              document.getElementById("first").style.display="block"
              document.getElementById("welcome").innerHTML=`welcome ${data_3[i].name_1}`
              document.getElementById("table").style.display="block";
              tables()
-           
+             
           }  
          
          // console.log(data_3[1])
      }
       }
+
      
    
 
    //   }
     
-
-     
-   
-    
-
-
-
 // // function logedin(){
 // //    if (localStorage.setItem("logedin",true)){
 // //       document.getElementById("form)").style.display="block"
@@ -152,25 +147,27 @@
  
  function edit(change){
    let b=JSON.parse(localStorage.getItem("details"))
-   newedit=[]
-   for(i=0;i<b.length;i++){
-      
-      if(b[i].email==change){
-         let proname=prompt("Name",b[i].name_1)
-         let promail=prompt("name",b[i].email)
-         if(proname!=b[i].name_1){
-            document.getElementById("newname").innerHTML=proname;
-            b.push(proname)
-         }
-         if(promail!=b[i].email){
-            document.getElementById("newmail").innerHTML=proname;
-            b.push(promail)
-         }
+     let newedit=[]
+     let proname=prompt("name",change)
+   //   let promail=prompt("mail",b[i].email)
+    for(i=0;i<b.length;i++){ 
     
-         // newedit.push(promname)
-      }
-   }
-   // let newchange=JSON.stringify(newedit)
-   // localStorage.setItem("details",newchange)
- }
- 
+   //    // if(b[i].name_1==change){
+        if(b[i].name_1!=proname){
+        
+             document.getElementById("name").innerHTML=proname;
+             newedit.push(proname)
+   //       }
+   //       if(promail!=b[i].email){
+   //          document.getElementById("newmail").innerHTML=proname;
+   //          newedit.push(promail)
+   //       }
+    
+   //       //  newedit.push(promname)
+   //    }
+   // }
+   //  
+ }}
+//  let newchange=JSON.stringify(newedit)
+//   localStorage.setItem("details",newchange)
+}

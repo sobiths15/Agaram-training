@@ -1,0 +1,41 @@
+h1{
+    background-color:rgb(103, 193, 216);
+    height: 15%;
+    text-align: center;
+    
+}
+
+.details{
+    background-color: black;
+    color:rgb(83, 219, 243);
+    padding: 1%;
+    padding-left: 2%;
+    border-radius: 10px;
+}
+.year{
+    display: inline-block;
+    vertical-align: top;
+}
+.school{
+    display: inline-block;
+    margin-left: 16%;
+}
+.name{
+    display: inline-block;
+}
+.value{
+    display: inline-block;
+    margin-left: 2%;
+}
+h2{
+    color: blue;
+}
+img{
+    width: 16%;
+    margin-left: 80%;
+    margin-top: -16.3%;
+    padding: 8px;
+    border-radius: 50%;
+    height: 28%;
+    border: 3px solid rgb(83, 219, 243);
+}
