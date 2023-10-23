@@ -42,6 +42,85 @@
                   <input name="objective" type="text" class="form-control" id="Objective" onkeyup="test(this)">
                 </div>    
                 </div>
+
+                <h2>Educational Qualifications</h2> 
+                <div class="mb-3 row">
+                  <label for="name" class="col-sm-2 col-form-label">Instite Name:</label>
+                  <div class="col-sm-10">
+                    <input name="instituename" type="text" class="form-control" id="a" onkeyup="mulData(this)">
+                  </div>    
+                  </div>   
+                  <div class="mb-3 row">
+                    <label for="name" class="col-sm-2 col-form-label">Level:</label>
+                    <div class="col-sm-10">
+                      <input name="level" type="text" class="form-control" id="b" onkeyup="mulData(this)">
+                    </div>    
+                    </div>  
+                    <div class="mb-3 row">
+                      <label for="name" class="col-sm-2 col-form-label">Year:</label>
+                      <div class="col-sm-10">
+                        <input name="year" type="text" class="form-control" id="c" onkeyup="mulData(this)">
+                      </div>    
+                      </div>  
+                      
+                        <div class="mb-3 row">
+                          <label for="name" class="col-sm-2 col-form-label">Precentage:</label>
+                          <div class="col-sm-6" style="display:flex">
+                            <input name="precentage" type="text" class="form-control" id="d" onkeyup="mulData(this)">
+                            
+                            
+                            <input  type="button" class="btn btn-primary" value="okk" onclick="mulData1('Education')">
+                          </div>    
+                          </div>     
+
+                          <div >
+                            <table class="table">
+                              
+                              <thead class="thead-dark" id="showeducation">
+                              </thead>
+                            <tbody id="table_list"> 
+                            </tbody>
+                        
+                          </table>
+                          </div>
+
+
+                <h2>Work Experience</h2> 
+                <div class="mb-3 row">
+                  <label for="name" class="col-sm-2 col-form-label">Company:</label>
+                  <div class="col-sm-10">
+                    <input name="company" type="text" class="form-control" id="b" onkeyup="workData(this)">
+                  </div>    
+                  </div>  
+                  <div class="mb-3 row">
+                    <label for="postion" class="col-sm-2 col-form-label">Position:</label>
+                    <div class="col-sm-10">
+                      <input name="position" type="text" class="form-control" id="c" onkeyup="workData(this)">
+                    </div>    
+                    </div>  
+                    
+                      <div class="mb-3 row">
+                        <label for="duration" class="col-sm-2 col-form-label">Duration:</label>
+                        <div class="col-sm-6" style="display:flex">
+                          <input name="duration" type="text" class="form-control" id="d" onkeyup="workData(this)">
+                          
+                          
+                          <input  type="button" class="btn btn-primary" value="okk" onclick="mulData2('workExperience')">
+                        </div>    
+                        </div>     
+
+                        <div >
+                          <table class="table">
+                            
+                            <thead class="thead-dark" id="showwork">
+                            </thead>
+                          <tbody id="work_list"> 
+                          </tbody>
+                      
+                        </table>
+                        </div>
+
+
                 <div class="mb-3 row">
                     <label for="name" class="col-sm-2 col-form-label">Skills:</label>
                     <div class="col-sm-4" style="display:flex">
@@ -65,7 +144,52 @@
                       <div id="showlanguage">
                         
                       </div>
+   
+                    <div class="mb-3 row">
+                      <label for="name" class="col-sm-2 col-form-label">Hobbies:</label>
+                      <div class="col-sm-4" style="display:flex">
+                        <input name="hobbies" type="text" class="form-control" id="Hobbies" >
+                        <input type="button" class="btn btn-primary" value="add" onclick="add('hobbies','Hobbies','showhobbies')">
+                      </div>    
+                      </div>       
+                      
+                      <div id="showhobbies">
+                        
+                      </div> 
                     
+                      <div class="mb-3 row">
+                        <label for="name" class="col-sm-2 col-form-label">Strengths:</label>
+                        <div class="col-sm-4" style="display:flex">
+                          <input name="strengths" type="text" class="form-control" id="Strengths" >
+                          <input type="button" class="btn btn-primary" value="add" onclick="add('strengths','Strengths','showstrengths')">
+                        </div>    
+                        </div>       
+                        
+                        <div id="showstrengths">
+                          
+                        </div> 
+                        <div class="mb-3 row">
+                          <label for="name" class="col-sm-2 col-form-label">Achivements & Awards:</label>
+                          <div class="col-sm-4" style="display:flex">
+                            <input name="achivements" type="text" class="form-control" id="Achivements" >
+                            <input type="button" class="btn btn-primary" value="add" onclick="add('achivements','Achivements','showachivements')">
+                          </div>    
+                          </div>       
+                          
+                          <div id="showachivements">
+                            
+                          </div> 
+                          <div class="mb-3 row">
+                            <label for="name" class="col-sm-2 col-form-label">Co-carricular Activities:</label>
+                            <div class="col-sm-4" style="display:flex">
+                              <input name="activities" type="text" class="form-control" id="Activities" >
+                              <input type="button" class="btn btn-primary" value="add" onclick="add('activities','Activities','showactivities')">
+                            </div>    
+                            </div>       
+                            
+                            <div id="showactivities">
+                              
+                            </div> 
                 <h2>Personal Details</h2>
                 <div class="mb-3 row">
                     <label for="name" class="col-sm-2 col-form-label">Father's Name:</label>
@@ -79,34 +203,27 @@
                       <input name="maritial_status" type="text" class="form-control" id="Maritial" onkeyup="test(this,'personalDetails')">
                     </div>    
                     </div>   
-                <h2>Educational Qualifications</h2> 
-                <div class="mb-3 row">
-                  <label for="name" class="col-sm-2 col-form-label">Instite Name:</label>
-                  <div class="col-sm-10">
-                    <input name="instituename" type="text" class="form-control" id="ins_name" onkeyup="mulData(this,)">
-                  </div>    
-                  </div>   
-                  <div class="mb-3 row">
-                    <label for="name" class="col-sm-2 col-form-label">Level:</label>
-                    <div class="col-sm-10">
-                      <input name="level" type="text" class="form-control" id="ins_level" onkeyup="mulData(this,)">
-                    </div>    
-                    </div>  
                     <div class="mb-3 row">
-                      <label for="name" class="col-sm-2 col-form-label">Year:</label>
+                      <label for="name" class="col-sm-2 col-form-label">Gender:</label>
                       <div class="col-sm-10">
-                        <input name="year" type="number" class="form-control" id="ins_year" onkeyup="mulData(this,)">
+                        <input name="gender" type="text" class="form-control" id="gender_id" onkeyup="test(this,'personalDetails')">
                       </div>    
-                      </div>  
-                      
-                        <div class="mb-3 row">
-                          <label for="name" class="col-sm-2 col-form-label">Precentage:</label>
-                          <div class="col-sm-4" style="display:flex">
-                            <input name="precentage" type="number" class="form-control" id="ins_precentage" onkeyup="mulData(this,)">
-                            <input  type="button" class="btn btn-primary" value="okk" onclick="add(null,null,null,'Education')">
-                          </div>    
-                          </div>     
-                          <input  type="button" class="btn btn-primary" value="finish" onclick="finish()">
+                      </div>     
+                      <div class="mb-3 row">
+                        <label for="name" class="col-sm-2 col-form-label">Date of birth:</label>
+                        <div class="col-sm-10">
+                          <input name="dateOfBirth" type="date" class="form-control" id="date_of_birth" onkeyup="test(this,'personalDetails')">
+                        </div>    
+                        </div>    
+               
+                          <div class="mb-3 row">
+                            <label for="name" class="col-sm-2 col-form-label">Declaration:</label>
+                            <div class="col-sm-10">
+                              <input name="declaration" type="text" class="form-control" id="Declaration" onkeyup="test(this)">
+                            </div>
+                            </div>
+
+                          <input  type="button" style="margin-left: 45%;" class="btn btn-primary" value="finish" onclick="finish()">
                           <!-- <input  type="button" class="btn btn-primary" value="get" onclick="get()"> -->
                           <!-- <input  type="button" class="btn btn-primary" value="delet" onclick="delet()">
                           <input  type="button" class="btn btn-primary" value="next page" onclick="next()">

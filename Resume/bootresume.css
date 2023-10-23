@@ -8,10 +8,24 @@
 h2{
     background-color: orange;
     color: white;
+    width: 105%;
+    position: relative;
+    border-radius: 0px 50px 0 0;
+}
+.first_sec h2::after{content:'';
+    transform: rotate(135deg);
+    z-index: -2;
+    width: 50px;
+    background-color: orange;
+    position: absolute;
+    top: 13px;
+    left: 83%;
+    height: 38px;
 }
 img{
     width: 100px;
     margin-left: 30%;
+    margin-bottom: 10px;
 }
 .first_sec{
     width: 35%;
@@ -23,7 +37,7 @@ img{
 
 }
 .second_sec{
-    /* display: inline-block; */
+
     margin-left: 5%;
     width: 50%;
     vertical-align: top;

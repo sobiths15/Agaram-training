@@ -1,21 +1,76 @@
 <!doctype html>
 <html lang="en">
   <head>
-   <link rel="stylesheet" href="css/style.css">
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </head>
+    <style>
+      *{
+        margin: 0.4%;
+        padding: 0%;
+      }
+      .email{
+        display: flex;
+      }
+      .phone{
+        display: flex;
+      }
+      .address{
+        display: flex;
+      }
+
+.details{
+    background-color: black;
+    color:rgb(83, 219, 243);
+    padding: 1%;
+    padding-left: 2%;
+    border-radius: 10px;
+}
+.year{
+    display: inline-block;
+    vertical-align: top;
+}
+.school{
+    display: inline-block;
+    margin-left: 16%;
+}
+.name{
+    display: inline-block;
+}
+.value{
+    display: inline-block;
+    margin-left: 2%;
+}
+h2{
+    color: blue;
+}
+img{
+    width: 14%;
+    margin-left: 80%;
+    margin-top: -15.8%;
+    padding: 8px;
+    border-radius: 50%;
+    height: 20%;
+    border: 3px solid rgb(83, 219, 243);
+}
+hr{
+  color: blue;
+  height: 4px;
+}
+    </style>
    
   </head>
   <body>
     <div id="test">
         <div class="details">
-            <h1 id="name"></h1>                 
-            <p id="email"><i class="Material-icons">email</i></p>
-            <p id="phone"><i class="Material-icons">phone</i></p>
-            <p id="address"><i class="Material-icons">location_on</i></p> 
-            <img src="/Resume/images/photonew (2).jpg" alt="photo">
+           
+            <h1 id="name" ></h1>              
+            <div class="email"><i class="material-icons">email</i><p id="email"></p></div>
+            <div class="phone"><i class="material-icons">phone</i><p id="phone"></p></div>
+            <div class="address"><i class="material-icons">location_on</i><p id="address"></p> </div>
+           
+            <img src="images/photonew (2).jpg" alt="photo">
             </div>
             
         <label><h2>Objectives</h2></label>
@@ -35,47 +90,46 @@
             <tbody id="edu_list"> 
             </tbody>
           </table>
-        <!-- <div class="year" id="year"><label for=""><h3></h3></label></div>
-        <div class="school" id="institute"><label for=""><h4>Loyola Institute of Technology and Science</h4></label>
-            <p id="level"></p>
-            <p id="precentage"></p>
-        </div> -->
-        <!-- <br>
-         <div class="year"><h3>2019</h3></div>
-         <div class="school"><h4>St.Joseph's Higher Secondary School Thiruthuvapuram</h4>
-            <p>Higher Secondary</p>
-            <p>73.83%</p>
-        </div>
-        <br>
-        <div class="year"><h3>2017</h3></div>
-        <div class="school"><h4>G.H.S.Kaliyakkavilai</h4>
-           <p>High Secondary</p>
-           <p>94.8%</p>
-       </div> -->
+
+          <label for=""><h2>Work Experience</h2></label>
+          <hr color="blue">
+          <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Company</th>
+                  <th scope="col">Position</th>
+                  <th scope="col">Duration</th>
+                 
+                </tr>
+              </thead>
+              <tbody id="workex_list"> 
+              </tbody>
+            </table>
+        
         <h2>Skills</h2>
         <hr color="blue">
          <p id="skills"></p>
          <h2>Languages Known</h2>
         <hr color="blue">
          <p id="languages"></p>
-        
-        <h2>Achivements & Awards</h2>
-        <hr color="blue">
-        <li>Won third prize in chess at Education District level.</li>
-        <li>Won Perunthalaivar Kamarajar award.</li>
-        <h2>Co-Carricular Activities</h2>
-        <hr color="blue">
-        <li>Attened one day Industrial visit in Enbest Pumps.</li>
-        <li>Shor film acted in cultural.</li>
-        <h2>Leadership</h2>
-        <hr color="blue">
-        <li>being a class leader for 4 years, during schoo days</li>
-        <h2>Strengths</h2>
-        <hr color="blue"> 
-        <li>Self motivated</li>
-        <li>Positive mind</li>
-        <li>Like to learn new things.</li> 
-        <li>Good listener</li>
+
+         <h2>Hobbies</h2>
+         <hr color="blue">
+          <p id="hobbies"></p>
+          <h2>Strengths</h2>
+          <hr color="blue">
+           <p id="strengths"></p>
+         
+           <h2>Achivements & Awards</h2>
+           <hr color="blue">
+            <p id="achivements"></p>
+         
+
+           <h2>Co-Carricular Activities</h2>
+           <hr color="blue">
+            <p id="activities"></p>
+         
+      
         <h2>Personal Details</h2>
         <hr color="blue">
         <div class="name">
@@ -85,15 +139,15 @@
             <p>Father's Name</p> 
         </div>
         <div class="value">
-            <p> 01/05/2002</p>
+            <p id="dateOfBirth"></p>
             <p id="martial"></p>
-            <p> Male</p>
+            <p id="gender"> </p>
             <p id="father"></p>
         
         </div>
         <h2>Declaration</h2>
         <hr color="blue">
-        <p>I hearby declare that the above information is correct and true to be of my Knowledge and belief.</p>
+        <p id="declaration"></p>
         <input type="button" value="download" onclick="download()">
     </div>
   </body>
@@ -112,7 +166,7 @@ const queryString = window.location.search;
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
-         getbyid(id)
+         $(document).ready(function(){getbyid(id)})
     </script>
 
 </html>
