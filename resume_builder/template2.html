@@ -16,20 +16,22 @@
 h2{
     background-color: orange;
     color: white;
-    width: 105%;
+
+}
+/* .bend{
     position: relative;
-    border-radius: 0px 50px 0 0;
 }
-.first_sec h2::after{content:'';
-    transform: rotate(135deg);
-    z-index: -2;
-    width: 50px;
-    background-color: orange;
+h2::after{
+    transform: rotate(56deg);
+    z-index: -1;
+    top: 26px;
+    left: 191px;
+    content: '';
+    width: 21px;
     position: absolute;
-    top: 13px;
-    left: 83%;
-    height: 38px;
-}
+    background-color: aqua;
+} */
+
 img{
     width: 100px;
     margin-left: 30%;
@@ -99,7 +101,7 @@ p,li{
         <p id="father"></p>
     </div>
     </div>
-    <h2>Skills</h2>
+    <h2 class="bend">Skills</h2>
     <p id="skills"></p>
   
     <h2>Languages Known</h2>
@@ -119,7 +121,7 @@ p,li{
    
        
 
-    <label for=""><h2>Education</h2></label>
+    <h2>Education</h2>
     
     <table class="table">
         <thead class="thead-dark">
@@ -135,7 +137,7 @@ p,li{
       </table>
   
 
-   <label for=""><h2>Work Experience</h2></label>
+   <h2>Work Experience</h2>
           <hr color="blue">
           <table class="table">
               <thead class="thead-dark">
@@ -151,7 +153,7 @@ p,li{
             </table>
             <h2>Achivements & Awards</h2>
        <p id="achivements"></p>
-    <label><h2>Objectives</h2></label>
+    <h2>Objectives</h2>
     <p id="objective"></p>
    <h2>Co-Carricular Activities</h2>
    <p id="activities"></p>

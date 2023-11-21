@@ -303,12 +303,12 @@ function get(){
                 <td >${reset.data[i].id}</td>
                 <td >${reset.data[i].user}</td>
                 <td><input  type="button"  value="delete" onclick="delet('${reset.data[i].id}')"></td>
-                <td><a href="template1.html?id=${reset.data[i].id}">Template 1</a></td>
-                <td><a href="template2.html?id=${reset.data[i].id}">Template 2</a></td>
+                <td><a href="template1.html?id=${reset.data[i].id}">  <img src="images/photo_6197264335408052672_y.jpg" alt="photo" width="150px"></a></td>
+                <td><a href="template2.html?id=${reset.data[i].id}"><img src="images/photo_6197264335408052673_y.jpg" alt="photo" width="150px"></a></td>
                 <td><a href="template3.html?id=${reset.data[i].id}">Template 3</a></td>
                 </tr>`
             }
-           
+            
             document.getElementById("table_list").innerHTML=tabledata;
             // window.location="choose.html"
             

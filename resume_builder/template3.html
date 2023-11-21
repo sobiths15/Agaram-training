@@ -119,14 +119,14 @@ h2 {
       <div class="main">
         <div class="left">
           <h2>Personal Information</h2>
-          <p id="name"><strong>Name:</strong><span id="name" ></span> </p>
+          <p><strong>Name:</strong><span id="name" ></span> </p>
           <p><strong>Email:</strong> <span id="email"></span></p>
           <p><strong>Phone:</strong> <span id="phone"></span></p>
           <h2>Skills</h2>
-          <ul id="list_skill">
-            
-          </ul>
+          <p id="skills"></p>
           <h2>Education</h2>
+          <h2>Languages Known</h2>
+          <p id="languages"></p>
           <table class="table">
             <thead class="thead-dark">
               <tr>
@@ -143,22 +143,24 @@ h2 {
         
         <div class="right">
           <h2>Work Experience</h2>
-          <h3>XYZ Company</h3>
-          <p><strong>Position:</strong> Software Developer</p>
-          <p><strong>Duration:</strong> 2018-2022</p>
-          <ul>
-            <li>Developed and maintained web applications using React, Node.js, and SQL</li>
-            <li>Implemented responsive design using CSS flexbox and media queries</li>
-            <li>Collaborated with cross-functional teams to deliver high-quality software products</li>
-          </ul> <br>
-          <h3>ABC Company</h3>
-          <p><strong>Position:</strong> Web Developer</p>
-          <p><strong>Duration:</strong> 2016-2018</p>
-          <ul>
-            <li>Created and maintained websites using HTML, CSS, and JavaScript</li>
-            <li>Optimized website performance and user experience using best practices</li>
-            <li>Worked with clients to understand their needs and deliver custom solutions</li>
-          </ul>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Company</th>
+                <th scope="col">Position</th>
+                <th scope="col">Duration</th>
+               
+              </tr>
+            </thead>
+            <tbody id="workex_list"> 
+            </tbody>
+          </table>
+          <h2>Hobbies</h2>
+          <p id="hobbies"></p>
+          <h2>Strengths</h2>
+           <p id="strengths"></p>
+           <h2>Declaration</h2>
+           <p id="declaration"></p>
         </div>
       </div>
     </div> 
