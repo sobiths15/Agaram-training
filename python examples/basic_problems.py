@@ -7,28 +7,29 @@
 
 # num=int(input("num:"))
 # #if num>1:
-# for i in range(2,num):
+# for i in range(0,num):
 #      if num%i==0:
 #         print("not prime")
 #         break
 # else:
 #     print("prime")   
-#else:
-    #print("not prime")       
+# else:
+#     print("not prime")       
 
 #multiplication table
 
 # def mul():
 #     num=int(input("num:"))
 #     for i in range(1,11):
-#         print(i,"*",num,"=",num*i)
+#         # print(i,"*",num,"=",num*i)
+#         print(f"{i}*{num}= {num*i} ")
 # mul()
 
 #factorial
 
 # num=int(input("num:"))
 # fact=1
-# for i in range(1,num+1):
+# for i in range(1,num+1): 
 #     fact=fact*i
 # print(fact)
 

@@ -5,20 +5,33 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
-
 import User from './Todo/User';
 import { Form } from 'react-bootstrap';
 import Todo from './Todo/Todo';
+import{configureStore } from '@reduxjs/toolkit'
+import{Provider} from 'react-redux'
+import  useReducer  from './Youusers';
+
+
+const store=configureStore({
+  reducer:{
+    user:useReducer
+  }
+})
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+ 
   <React.StrictMode>
    
-    <App />
+   <Provider store={store}>
+   <App />
+   </Provider>
     
    
   </React.StrictMode>
+  
 );
 
 
