@@ -6,13 +6,13 @@
 #prime number
 
 # num=int(input("num:"))
-# #if num>1:
-# for i in range(0,num):
-#      if num%i==0:
-#         print("not prime")
-#         break
-# else:
-#     print("prime")   
+# if num>1:
+#     for i in range(2,num):
+#         if num%i==0:
+#             print("not prime")
+#             break
+#     else:
+#         print("prime")   
 # else:
 #     print("not prime")       
 
@@ -57,12 +57,27 @@
 
 # reverse string
 
-# string="hello world"
+# string="sobith"
 # print(string[::-1])
+
 
 # reverse numbers
 
-# num=12345221
+# num=123452217
 # print(str(num)[::-1])
 
-# check amstrong number
+# print 10 to 1
+
+# for i in range(10,0,-1):
+#     print(i)
+
+# Amstrong number
+
+# num=int(input("enter num:"))
+# num_length=len(str(num))
+# armstrong_num=sum(int(digit)** num_length for digit in str(num))
+# if num==armstrong_num:
+#     print("armstrong number")
+# else:
+#     print("not armstrong number")
+

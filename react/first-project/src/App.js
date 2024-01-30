@@ -4,7 +4,7 @@ import './App.css';
 // import Header from './Header';
 // import Todo from './Todo/Todo';
 // import User from './Todo/User';
-// import Login from './Login';
+import Login from './Login';
 import {
   createBrowserRouter,
   // RouterProvider,
@@ -14,6 +14,7 @@ import {
 
 import Log from './Todo/Log';
 import Profile from './Profile';
+import User from './Todo/User';
 
 
 
@@ -57,7 +58,7 @@ import Profile from './Profile';
       <>
     
       <Profile/>
-      <Log/>
+      <User/>
       {/* <RouterProvider router={router} /> */}
       </>
     

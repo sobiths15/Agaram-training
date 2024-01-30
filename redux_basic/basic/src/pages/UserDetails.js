@@ -2,13 +2,16 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect,useState } from 'react'
+import Home from './Home'
+import UserList from '../components/UserList'
+
 function UserDetails() {
 
     let[userIdData,setIdData]=useState([])
   
 
     const userId=useParams()
-    console.log(userId)
+    console.log("useparms",userId)
 
     const getUserData=()=>{
 
@@ -34,6 +37,8 @@ function UserDetails() {
        {id} */}
 
 {JSON.stringify (useParams())}
+
+  <UserList isDeleteVisible={true} logOut={true}/>
        
         </div>
   )
