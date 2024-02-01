@@ -272,7 +272,7 @@ function finish(){
             console.log(err)
         }
     })
-    alert("hii")
+    
 
     window.location="show.html"
 }
@@ -305,7 +305,7 @@ function get(){
                 <td><input  type="button"  value="delete" onclick="delet('${reset.data[i].id}')"></td>
                 <td><a href="template1.html?id=${reset.data[i].id}">  <img src="images/photo_6197264335408052672_y.jpg" alt="photo" width="150px"></a></td>
                 <td><a href="template2.html?id=${reset.data[i].id}"><img src="images/photo_6197264335408052673_y.jpg" alt="photo" width="150px"></a></td>
-                <td><a href="template3.html?id=${reset.data[i].id}">Template 3</a></td>
+                <td><a href="template3.html?id=${reset.data[i].id}"><img src="images/photo_6186013230489517083_x.jpg" alt="photo" width="150px"></a></td>
                 </tr>`
             }
             
@@ -474,19 +474,20 @@ function getbyid(b){
 //     return false;
 // };
 function download() {
-    alert('ok')
-const page = document.getElementById('test');
-var opt = {
-margin:
-1,
-filename: 'Demopdf.pdf',
-image:
-{ type: 'jpeg', quality: 0.98 },
-html2canvas:
-{ scale: 2 },
-jsPDF:
-{ unit: 'in', format: 'letter', orientation: 'portrait' }
-};
-// Choose the element that our invoice is rendered in.
-html2pdf().set(opt). from (page).save();
+    alert('Confirm download')
+    window.print()
+// const page = document.getElementById('test');
+// var opt = {
+// margin:
+// 1,
+// filename: 'Demopdf.pdf',
+// image:
+// { type: 'jpeg', quality: 0.98 },
+// html2canvas:
+// { scale: 2 },
+// jsPDF:
+// { unit: 'in', format: 'letter', orientation: 'portrait' }
+// };
+// // Choose the element that our invoice is rendered in.
+// html2pdf().set(opt). from (page).save();
 }
